@@ -16,3 +16,4 @@ public class ModelNotFoundAdvice {
         return ex.getMessage();
     }
 }
+
