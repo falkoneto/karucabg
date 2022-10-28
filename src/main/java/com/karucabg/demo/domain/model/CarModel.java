@@ -1,10 +1,11 @@
 package com.karucabg.demo.domain.model;
 
 import javax.persistence.*;
+import java.util.UUID;
 
 @Entity
-@Table(name="models")
-public class Model {
+@Table(name="carmodels")
+public class CarModel {
     @Id
     @Column(columnDefinition = "serial")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -12,10 +13,10 @@ public class Model {
     private Integer manufacturerId;
     private String name;
 
-    public Model() {
+    public CarModel() {
     }
 
-    public Model(Integer id, Integer manufacturerId, String name) {
+    public CarModel(Integer id, Integer manufacturerId, String name) {
         this.id = id;
         this.manufacturerId = manufacturerId;
         this.name = name;
